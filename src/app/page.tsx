@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import './globals.css';
+import { Navbar } from './components/Navbar';
 
 export const metadata: Metadata = {
 	title: 'WebCrafters',
@@ -7,16 +8,9 @@ export const metadata: Metadata = {
 
 export default function Home() {
 	return (
-		<body className=" bg-white">
-			<div className="container">
-				<nav className="nav">
-					<div className="brand-box">
-						<div className="icon">Icon</div>
-						<div className="logo">Brand name</div>
-					</div>
-					<div className="nav-items">about us</div>
-					<div className="nav-items">contact</div>
-				</nav>
+		<body className="w-full h-full bg-secondary">
+			<div className="flex bg-primary w-full">
+				<Navbar />
 			</div>
 		</body>
 	);
