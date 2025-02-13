@@ -12,7 +12,7 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en" className={roboto.className}>
-			<body className={``}>{children}</body>
+			<body className={`w-full h-full bg-secondary`}>{children}</body>
 		</html>
 	);
 }
